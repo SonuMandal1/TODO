@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+            <p class="subtitle">Organize your tasks efficiently</p>
+        </header>
+
+        <div class="task-form">
+            <div class="form-group">
+                <input type="text" id="taskInput" class="form-control" placeholder="Enter a new task...">
+            </div>
+            <button id="addTaskBtn" class="btn btn-primary">Add Task</button>
+        </div>
+
+        <div class="task-lists">
+            <div class="task-section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Pending Tasks
+                        <span class="badge badge-primary" id="pendingCount">0</span>
+                    </h2>
+                </div>
+                <ul id="pendingTasks" class="task-list">
+                    <li class="no-tasks">No pending tasks</li>
+                </ul>
+            </div>
+
+            <div class="task-section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Completed Tasks
+                        <span class="badge badge-success" id="completedCount">0</span>
+                    </h2>
+                </div>
+                <ul id="completedTasks" class="task-list">
+                    <li class="no-tasks">No completed tasks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
